@@ -106,7 +106,6 @@ nav img{
     border-bottom-left-radius: 10%;
     box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
     position: relative;
-    z-index: 10;
     
   
 }
@@ -123,13 +122,25 @@ nav img{
     z-index: 9999;
 
 }
+.right h3{
+    position: relative;
+    right: 6vw;
+    
+    font-size: 1.5vw;
+    font-weight: 500;
+    line-height: 5vw;
+    z-index: 9999;
+
+}
+
+
 .bouncy-bob{
     position: absolute;
     height: 30vw;
     width: 30vw;
     background-color: orangered;
     border-radius: 50%;
-    left: 0;
+    right: 10svw;
     top: 35vh;
     filter: blur(20px);
     animation-name: animate-2;
@@ -145,7 +156,7 @@ nav img{
     width: 30vw;
     background-color: orangered;
     border-radius: 50%;
-    left: 20vw;
+    right: 28vw;
     top: 5vh;
     filter: blur(20px);
     animation-name: animate-1;
@@ -159,10 +170,10 @@ nav img{
 
 @keyframes animate-1 {
     from{
-        transform: translate(-5%,5%);
+        transform: translate(5%,5%);
     }
     to{
-        transform: translate(5%,-5%);
+        transform: translate(-5%,-5%);
     }
 
     
@@ -170,10 +181,10 @@ nav img{
 
 @keyframes animate-2 {
     from{
-        transform: translate(5%,-5%);
+        transform: translate(-5%,-5%);
     }
     to{
-        transform: translate(-5%,5%);
+        transform: translate(5%,5%);
     }
 
     
