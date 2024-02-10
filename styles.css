@@ -102,23 +102,15 @@ nav img{
     border: 0px ;
     border-radius: 20%;
     box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-    -webkit-transition: all 1s ease;
     position: relative;
     z-index: 9;
     
   
 }
 
-.right img:hover{
-    filter: grayscale(0%);
-filter: gray;
--webkit-filter: grayscale(0%);
-filter: none;
-transition: 1s ease;
+
     
-}
+
 .center h3{
     position: relative;
     top: 2vh;
