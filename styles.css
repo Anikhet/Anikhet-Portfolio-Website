@@ -98,12 +98,15 @@ nav img{
     flex-direction: column;
 }
 .left img{
-    height: 40vh;
+    height: 50vh;
     border: 0px ;
-    border-top-left-radius: 20%;
-    border-bottom-right-radius: 20%;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    border-bottom-right-radius: 10%;
+    border-bottom-left-radius: 10%;
     box-shadow: 10px 15px 25px 0 rgba(0,0,0,.2);
     position: relative;
+    z-index: 10;
     
   
 }
@@ -126,7 +129,7 @@ nav img{
     width: 30vw;
     background-color: orangered;
     border-radius: 50%;
-    right: 10svw;
+    left: 0;
     top: 35vh;
     filter: blur(20px);
     animation-name: animate-2;
@@ -142,7 +145,7 @@ nav img{
     width: 30vw;
     background-color: orangered;
     border-radius: 50%;
-    right: 28vw;
+    left: 20vw;
     top: 5vh;
     filter: blur(20px);
     animation-name: animate-1;
@@ -156,10 +159,10 @@ nav img{
 
 @keyframes animate-1 {
     from{
-        transform: translate(5%,5%);
+        transform: translate(-5%,5%);
     }
     to{
-        transform: translate(-5%,-5%);
+        transform: translate(5%,-5%);
     }
 
     
@@ -167,10 +170,10 @@ nav img{
 
 @keyframes animate-2 {
     from{
-        transform: translate(-5%,-5%);
+        transform: translate(5%,-5%);
     }
     to{
-        transform: translate(5%,5%);
+        transform: translate(-5%,5%);
     }
 
     
