@@ -90,6 +90,7 @@ nav img{
     display: flex;
     align-items: center;
     justify-content: center;
+    gap : 5vw
 }
 
 .right{
@@ -104,6 +105,8 @@ nav img{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
     -webkit-transition: all 1s ease;
+    position: relative;
+    z-index: 9;
     
   
 }
@@ -120,6 +123,8 @@ transition: 1s ease;
     position: relative;
     top: 2vh;
     left: 5.5vw;
+    z-index: 1000;
+   
 }
 
 
@@ -127,16 +132,61 @@ transition: 1s ease;
     width: 25vw;
     font-size: 5vw;
     line-height: 5vw;
+    z-index: 1000;
 
 }
 .bouncy-bob{
     position: absolute;
-    height: 35vw;
-    width: 35vw;
+    height: 30vw;
+    width: 30vw;
     background-color: orangered;
     border-radius: 50%;
     right: 10svw;
     top: 35vh;
     filter: blur(20px);
+    animation-name: animate-2;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
+}
+.bouncy-bob-1{
+    position: absolute;
+    height: 30vw;
+    width: 30vw;
+    background-color: orangered;
+    border-radius: 50%;
+    right: 28vw;
+    top: 5vh;
+    filter: blur(20px);
+    animation-name: animate-1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+
+@keyframes animate-1 {
+    from{
+        transform: translate(5%,5%);
+    }
+    to{
+        transform: translate(-5%,-5%);
+    }
+
+    
+}
+
+@keyframes animate-2 {
+    from{
+        transform: translate(-5%,-5%);
+    }
+    to{
+        transform: translate(5%,5%);
+    }
+
+    
 }
