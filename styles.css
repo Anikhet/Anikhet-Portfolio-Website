@@ -20,6 +20,18 @@ body,html{
     padding: 0 2vw;
     
 }
+.page2{
+
+    min-height: 100vh;
+    width: 100%;
+    background-color: #EFEAE3;
+    position: relative;
+    padding: 0 2vw;
+    
+}
+
+
+
 nav{
     padding: 2vw 3vw;
   
@@ -107,9 +119,14 @@ nav img{
     border-bottom-left-radius: 10%;
     box-shadow: 30px 25px 30px 0 rgba(0,0,0,.2);
     position: relative;
-    
-  
+
 }
+.left img:hover{
+    box-shadow: 30px 25px 30px 10px rgba(0,0,0,.2);
+
+
+}
+
 .right{
     
     font-family: "Roboto", sans-serif;
@@ -127,9 +144,9 @@ nav img{
     width: 25vw;
     font-size: 5vw;
     line-height: 5vw;
-    
-
 }
+
+
 .right h3{
     position: relative;
     right: 6vw;
@@ -217,10 +234,10 @@ nav img{
 
 @keyframes animate-1 {
     from{
-        transform: translate(2%,5%);
+        transform: translate(9%,5%);
     }
     to{
-        transform: translate(-5%,-5%);
+        transform: translate(-5%,-7%);
     }
 
     
@@ -231,7 +248,7 @@ nav img{
         transform: translate(-5%,-5%);
     }
     to{
-        transform: translate(5%,5%);
+        transform: translate(5%,7%);
     }
 
     
@@ -243,6 +260,44 @@ nav img{
     }
     to{
         transform: translate(5%,5%);
+    }
+
+    
+}
+.container-info{
+    display: flex;
+    gap: 30vw;
+    height: 20vh;
+    align-items: center;
+    justify-content: center;
+    animation-name: animate-1;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+.aboutme h2{
+        position: relative;
+        width: 25vw;
+        font-size: 5vw;
+        line-height: 5vw;
+}
+
+.projects h2{
+    position: relative;
+    width: 25vw;
+    font-size: 5vw;
+    line-height: 5vw;
+}
+
+@keyframes animate-4 {
+    from{
+        transform: translateX(-20%);
+    }
+    to{
+        transform: translateX(20%);
     }
 
     
