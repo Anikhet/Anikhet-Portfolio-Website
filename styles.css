@@ -218,9 +218,9 @@ nav img{
     position: absolute;
     height: 30vw;
     width: 30vw;
-    background-color:rgba(255, 68, 0, 0.959);
+    background-color:rgb(255, 106, 0);
     border-radius: 50%;
-    right: 20vw;
+    right: 40vw;
     top: 20vh;
     filter: blur(20px);
     animation-name: animate-1;
@@ -266,24 +266,39 @@ nav img{
 }
 .container-info{
     display: flex;
-    gap: 30vw;
-    height: 20vh;
-    align-items: center;
+    gap: 10vw;
+    height: 100vh;
+    padding: 5vh;
     justify-content: center;
-    animation-name: animate-1;
+}
+
+
+.container-info:hover{
+    animation-name: animate-4;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-
 }
 
 .aboutme h2{
         position: relative;
-        width: 25vw;
+        width: 35vw;
         font-size: 5vw;
         line-height: 5vw;
 }
+
+.aboutme h3{
+    position: relative;
+    padding: 3vh 0;
+
+    width: 40vw;
+    font-size: 1.4vw;
+    line-height: 2.5vw;
+    z-index: 10;
+}
+
+
 
 .projects h2{
     position: relative;
@@ -294,10 +309,10 @@ nav img{
 
 @keyframes animate-4 {
     from{
-        transform: translateX(-20%);
+        transform: translateX(-1%);
     }
     to{
-        transform: translateX(20%);
+        transform: translateX(1%);
     }
 
     
