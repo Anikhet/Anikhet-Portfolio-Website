@@ -142,7 +142,7 @@ nav img{
 .right h1{
     position: relative;
     width: 25vw;
-    font-size: 5vw;
+    font-size: 6.5vw;
     line-height: 5vw;
 }
 
@@ -187,9 +187,9 @@ nav img{
     border-radius: 50%;
     right: 10svw;
     top: 35vh;
-    filter: blur(20px);
+    filter: blur(30px);
     animation-name: animate-2;
-    animation-duration: 6s;
+    animation-duration: 4s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
     animation-direction: alternate;
@@ -200,17 +200,17 @@ nav img{
     position: absolute;
     height: 30vw;
     width: 30vw;
-    background-color: orangered;
+    background-color: rgb(255, 123, 0);
     border-radius: 50%;
-    right: 28vw;
-    top: 5vh;
+    right: 10vw;
+    top: 35vh;
     filter: blur(20px);
     animation-name: animate-1;
-    animation-duration: 6s;
+    animation-duration: 3s;
     animation-timing-function: linear;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    z-index: 4;
+    z-index: 3;
 
 }
 
@@ -218,7 +218,7 @@ nav img{
     position: absolute;
     height: 30vw;
     width: 30vw;
-    background-color:rgb(255, 106, 0);
+    background-color:rgb(233, 102, 8);
     border-radius: 50%;
     right: 40vw;
     top: 20vh;
@@ -234,10 +234,10 @@ nav img{
 
 @keyframes animate-1 {
     from{
-        transform: translate(29%,25%);
+        transform: translate(0%,-18%);
     }
     to{
-        transform: translate(-25%,-27%);
+        transform: translate(5%,3%);
     }
 
     
@@ -245,16 +245,16 @@ nav img{
 
 @keyframes animate-2 {
     from{
-        transform: translate(-15%,-15%);
+        transform: translate(0%,-5%);
     }
     to{
-        transform: translate(15%,17%);
+        transform: translate(5%,10%);
     }
 
     
 }
 
-@keyframes animate-3 {
+/* @keyframes animate-3 {
     from{
         transform: translate(-5%,-5%);
     }
@@ -263,7 +263,7 @@ nav img{
     }
 
     
-}
+} */
 .container-info{
     display: flex;
     gap: 10vw;
