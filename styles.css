@@ -234,10 +234,10 @@ nav img{
 
 @keyframes animate-1 {
     from{
-        transform: translate(9%,5%);
+        transform: translate(19%,15%);
     }
     to{
-        transform: translate(-5%,-7%);
+        transform: translate(-15%,-17%);
     }
 
     
