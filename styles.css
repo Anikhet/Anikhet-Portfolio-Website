@@ -1,13 +1,29 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 100;
+    src: url(./NeueHaasDisplayLight.ttf);
+}
+
+@font-face {
+    font-family: neu;
+    font-weight: 200;
+    src: url(./NeueHaasDisplayRoman.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-body,html{
 
-    height: 100%;
-    width: 100%;
+    font-family: neu;
 }
+
+
+
 
 
 
@@ -102,7 +118,7 @@ nav img{
     display: flex;
     align-items: center;
     justify-content: center;
-    gap : 20vw
+    gap : 10vw
 }
 
 .left{
@@ -112,6 +128,7 @@ nav img{
 .left img{
     height: 50vh;
     border: 20px solid #EFEAE3;
+ 
 
     border-top-left-radius: 10%;
     border-top-right-radius: 10%;
@@ -119,6 +136,8 @@ nav img{
     border-bottom-left-radius: 10%;
     box-shadow: 30px 25px 30px 0 rgba(0,0,0,.2);
     position: relative;
+
+  
 
 }
 .left img:hover{
@@ -149,10 +168,10 @@ nav img{
 
 .right h3{
     position: relative;
-    right: 6vw;
+    
     
     font-size: 1.5vw;
-    font-weight: 500;
+    font-weight: 300;
     line-height: 5vw;
     z-index: 9999;
 
@@ -177,6 +196,8 @@ nav img{
 .shad-3{
     position: relative;
     z-index: 8;
+    position: relative;
+    left: 4vw;
 }
 
 .bouncy-bob{
@@ -218,12 +239,12 @@ nav img{
     position: absolute;
     height: 30vw;
     width: 30vw;
-    background-color:rgb(233, 102, 8);
+    background-color:orangered;
     border-radius: 50%;
     right: 40vw;
     top: 20vh;
     filter: blur(20px);
-    animation-name: animate-1;
+    animation-name: animate-2;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-direction: alternate;
