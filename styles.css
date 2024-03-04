@@ -1,283 +1,312 @@
 @font-face {
-    font-family: neu;
-    src: url(./NeueHaasDisplayMediu.ttf);
+  font-family: neu;
+  font-weight: 300;
+  src: url(./NeueHaasDisplayMediu.ttf);
 }
 
 @font-face {
-    font-family: neu;
-    font-weight: 100;
-    src: url(./NeueHaasDisplayLight.ttf);
+  font-family: neu;
+  font-weight: 100;
+  src: url(./NeueHaasDisplayLight.ttf);
 }
 
 @font-face {
-    font-family: neu;
-    font-weight: 200;
-    src: url(./NeueHaasDisplayRoman.ttf);
+  font-family: neu;
+  font-weight: 200;
+  src: url(./NeueHaasDisplayRoman.ttf);
 }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: neu;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: neu;
 }
 
-
-
-body,html{
-
-    height: 100%;
-    width: 100%;
+body,
+html {
+  height: 100%;
+  width: 100%;
 }
 
-
-
-.page1{
-
-    min-height: 100vh;
-    width: 100%;
-    background-color: #EFEAE3;
-    position: relative;
-    padding: 0 2vw;
-    
-}
-.page2{
-
-    min-height: 100vh;
-    width: 100%;
-    background-color: #EFEAE3;
-    position: relative;
-    padding: 0 2vw;
-    
+#intro {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(0, 0, 0);
+  position: fixed;
+  z-index: 200;
 }
 
-
-
-nav{
-    padding: 2vw 3vw;
-  
-    width: 100%;
-    display: flex;
-    
-    align-self: center;
-
-    justify-content: space-between;
-}
-nav img{
-    width: 10%;
+#intro h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 7vw;
+  font-weight: 100;
+  color: white;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
 }
 
-
-.nav-2{
-    display: flex;
-    align-items: center;
-    gap : 1vw;
+.page1 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  position: relative;
+  padding: 0 2vw;
 }
 
-.nav-2 h4{
-    padding: 10px 20px;
-    border : 1px solid rgba(0, 0, 0, 0.851);
-    border-radius: 50px;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.765);
-    position: relative;
-    font-size: 18px;
-    overflow: hidden;
-    
-    
+.page2 {
+  min-height: 100vh;
+  width: 100%;
+  background-color: #efeae3;
+  position: relative;
+  padding: 0 2vw;
 }
-.nav-2 h4::after{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: rgb(37, 29, 29);
-    left: -100%;
-    border-radius: 50%;
-    transition: all ease 0.5s;
-
+.page3 {
+  min-height: 100vh;
+  width: 100vw;
+  background-color: #efeae3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.nav-2 h4:hover::after{
-    bottom: 0;
-    left : 0;
-    border-radius: 0;
-
+.elem {
+  background-color: red;
+  width: 100%;
+  position: relative;
+  /* display: flex;
+    justify-content: center; */
 }
 
-.nav-2 h4 a{
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.765);
-    z-index: 9;
-    position: relative;
+.elem h2 {
+  font-size: 4vw;
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
-.nav-2 h4:hover a{
-    color: white;
+.elem .moving {
+  width: 100%;
+  background-color: blue;
+  display: inline-block;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
 }
 
-.center{
-    height: 55vh;
-    width: 100%;
-    /* background-color: rgb(234, 223, 200); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap : 10vw
+.elem .moving .moving-in {
+  background-color: green;
+  display: inline-block;
+
+  white-space: nowrap;
+}
+.elem .moving .moving-in h5 {
+  color: rgb(37, 31, 31);
+  font-size: 1vw;
+  display: inline-block;
+  margin-right: 45px;
+  font-weight: 100;
 }
 
-.left{
-    display: flex;
-    flex-direction: column;
+nav {
+  padding: 2vw 3vw;
+
+  width: 100%;
+  display: flex;
+
+  align-self: center;
+
+  justify-content: space-between;
 }
-.left img{
-    height: 50vh;
-    border: 20px solid #EFEAE3;
- 
-
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    border-bottom-right-radius: 10%;
-    border-bottom-left-radius: 10%;
-    box-shadow: 30px 25px 30px 0 rgba(0,0,0,.2);
-    position: relative;
-
-  
-
-}
-.left img:hover{
-    box-shadow: 30px 25px 30px 10px rgba(0,0,0,.2);
-
-
+nav img {
+  width: 10%;
 }
 
-.right{
-    
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-      
-  
+.nav-2 {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
 }
 
-
-
-
-.right h1{
-    position: relative;
-    width: 25vw;
-    font-size: 6.5vw;
-    line-height: 5vw;
+.nav-2 h4 {
+  padding: 10px 20px;
+  border: 1px solid rgba(0, 0, 0, 0.851);
+  border-radius: 50px;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.765);
+  position: relative;
+  font-size: 18px;
+  overflow: hidden;
+}
+.nav-2 h4::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(37, 29, 29);
+  left: -100%;
+  border-radius: 50%;
+  transition: all ease 0.5s;
 }
 
-
-.right h3{
-    position: relative;
-    
-    
-    font-size: 1.5vw;
-    font-weight: 300;
-    line-height: 5vw;
-    z-index: 9999;
-
+.nav-2 h4:hover::after {
+  bottom: 0;
+  left: 0;
+  border-radius: 0;
 }
-#shadow-name{
-    position: relative;
-    display: flex;
-    width: 1vw;
-   
-    
 
+.nav-2 h4 a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.765);
+  z-index: 9;
+  position: relative;
 }
-.shad-1{
-    position: relative;
-    z-index: 8;
+
+.nav-2 h4:hover a {
+  color: white;
+}
+
+.center {
+  height: 55vh;
+  width: 100%;
+  /* background-color: rgb(234, 223, 200); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+}
+.left img {
+  height: 50vh;
+  border: 20px solid #efeae3;
+
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
+  border-bottom-right-radius: 10%;
+  border-bottom-left-radius: 10%;
+  box-shadow: 30px 25px 30px 0 rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.left img:hover {
+  box-shadow: 30px 25px 30px 10px rgba(0, 0, 0, 0.2);
+}
+
+.right {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.right h1 {
+  position: relative;
+
+  width: 25vw;
+  font-size: 6.5vw;
+  line-height: 5vw;
+}
+
+.right h3 {
+  position: relative;
+
+  font-size: 1.5vw;
+  font-weight: 300;
+  line-height: 5vw;
+  z-index: 100;
+}
+#shadow-name {
+  position: relative;
+  display: flex;
+  width: 1vw;
+}
+.shad-1 {
+  position: relative;
+  z-index: 8;
 }
 .shad-2 {
-    position: relative;
-    z-index: 3;
+  position: relative;
+  z-index: 3;
 }
 
-.shad-3{
-    position: relative;
-    z-index: 8;
-    position: relative;
-    left: 4vw;
+.shad-3 {
+  position: relative;
+  z-index: 8;
+  position: relative;
+  left: 4vw;
 }
 
-.bouncy-bob{
-    position: absolute;
-    height: 30vw;
-    width: 30vw;
-    background-color: orangered;
-    border-radius: 50%;
-    right: 10svw;
-    top: 35vh;
-    filter: blur(30px);
-    animation-name: animate-2;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    z-index: 4;
-
+.bouncy-bob {
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  background-color: orangered;
+  border-radius: 50%;
+  right: 10svw;
+  top: 35vh;
+  filter: blur(30px);
+  animation-name: animate-2;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  z-index: 4;
 }
-.bouncy-bob-1{
-    position: absolute;
-    height: 30vw;
-    width: 30vw;
-    background-color: rgb(255, 123, 0);
-    border-radius: 50%;
-    right: 10vw;
-    top: 35vh;
-    filter: blur(20px);
-    animation-name: animate-1;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-    z-index: 3;
-
+.bouncy-bob-1 {
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  background-color: rgb(255, 123, 0);
+  border-radius: 50%;
+  right: 10vw;
+  top: 35vh;
+  filter: blur(20px);
+  animation-name: animate-1;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  z-index: 3;
 }
 
-.bouncy-bob-mid{
-    position: absolute;
-    height: 30vw;
-    width: 30vw;
-    background-color:orangered;
-    border-radius: 50%;
-    right: 40vw;
-    top: 20vh;
-    filter: blur(20px);
-    animation-name: animate-2;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
-
+.bouncy-bob-mid {
+  position: absolute;
+  height: 30vw;
+  width: 30vw;
+  background-color: orangered;
+  border-radius: 50%;
+  right: 40vw;
+  top: 20vh;
+  filter: blur(20px);
+  animation-name: animate-2;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
-
 
 @keyframes animate-1 {
-    from{
-        transform: translate(0%,-18%);
-    }
-    to{
-        transform: translate(5%,3%);
-    }
-
-    
+  from {
+    transform: translate(0%, -12%);
+  }
+  to {
+    transform: translate(5%, 3%);
+  }
 }
 
 @keyframes animate-2 {
-    from{
-        transform: translate(0%,-5%);
-    }
-    to{
-        transform: translate(5%,10%);
-    }
-
-    
+  from {
+    transform: translate(0%, -5%);
+  }
+  to {
+    transform: translate(5%, 10%);
+  }
 }
 
 /* @keyframes animate-3 {
@@ -290,45 +319,37 @@ nav img{
 
     
 } */
-.container-info{
-    display: flex;
-    gap: 10vw;
-    height: 100vh;
-    padding: 5vh;
-    justify-content: center;
+.container-info {
+  display: flex;
+  gap: 10vw;
+  height: 100vh;
+  padding: 5vh;
+  justify-content: center;
 }
 
-
-.container-info:hover{
-    animation-name: animate-4;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-direction: alternate;
-    animation-iteration-count: infinite;
+.container-info:hover {
+  animation-name: animate-4;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
-.aboutme h2{
-        position: relative;
-        width: 35vw;
-        font-size: 5vw;
-        line-height: 5vw;
+.aboutme h2 {
+  position: relative;
+  width: 35vw;
+  font-size: 6vw;
+  line-height: 10vh;
+  font-weight: 100;
 }
 
-.aboutme h3{
-    position: relative;
-    padding: 3vh 0;
+.aboutme h3 {
+  position: relative;
+  padding: 3vh 0;
 
-    width: 40vw;
-    font-size: 1.4vw;
-    line-height: 2.5vw;
-    z-index: 10;
-}
-
-
-
-.projects h2{
-    position: relative;
-    width: 25vw;
-    font-size: 5vw;
-    line-height: 5vw;
+  width: 40vw;
+  font-size: 1.4vw;
+  line-height: 2.5vw;
+  z-index: 10;
+  font-weight: 100;
 }
