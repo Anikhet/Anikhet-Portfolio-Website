@@ -68,7 +68,7 @@ html {
     
   min-height: 100vh;
   width: 100vw;
-  background-color: #000000;
+  background-color: #efeae3;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,11 +88,11 @@ html {
 }
 
 .elem h2 {
-  font-size: 4vw;
+  font-size: 3vw;
   font-weight: 100;
   text-transform: uppercase;
   z-index: 20;
-  color: #efeae3;
+
 }
 
 .elem:hover h2 {
@@ -321,7 +321,7 @@ nav img {
   width: 30vw;
   background-color: orangered;
   border-radius: 50%;
-  right: 40vw;
+  right: 65vw;
   top: 20vh;
   filter: blur(20px);
   animation-name: animate-2;
@@ -349,22 +349,13 @@ nav img {
   }
 }
 
-/* @keyframes animate-3 {
-    from{
-        transform: translate(-5%,-5%);
-    }
-    to{
-        transform: translate(5%,5%);
-    }
-
-    
-} */
 .container-info {
   display: flex;
   gap: 10vw;
   height: 100vh;
-  padding: 5vh;
+
   justify-content: center;
+  align-items: center;
 }
 
 .container-info:hover {
