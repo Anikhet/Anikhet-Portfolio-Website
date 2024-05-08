@@ -235,7 +235,7 @@ nav img {
   flex-direction: column;
 }
 .left img {
-  height: 50vh;
+  height: 30vw;
   border: 20px solid #efeae3;
 
   border-top-left-radius: 10%;
