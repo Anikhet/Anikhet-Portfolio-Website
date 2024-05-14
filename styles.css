@@ -62,7 +62,10 @@ html {
   width: 100%;
   background-color: #efeae3;
   position: relative;
-  padding: 0 2vw;
+  display: flex;
+align-items: center;
+  justify-content: center;
+
 }
 
 .page3 {
@@ -361,12 +364,37 @@ nav img {
 
 .container-info {
   display: flex;
-  gap: 10vw;
-  height: 100vh;
+
+  height: 80%;
+  /* width: 70%; */
+
+  background-color: yellow;
 
   justify-content: center;
   align-items: center;
+  gap: 8vw;
+  flex-wrap: wrap;
+
 }
+.insidecontainer{
+  flex-shrink: 0;
+  height: 15vw;
+  width: 35vw;
+  background-color: orangered;
+  border-radius: 20px;
+ 
+  border: 2px solid black;
+  box-shadow: 10px 20px 0px black;
+  padding: 2vw;
+  
+  
+}
+.insidediv{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .container-info:hover {
   animation-name: animate-4;
