@@ -368,7 +368,7 @@ nav img {
   height: 80%;
   /* width: 70%; */
 
-  background-color: yellow;
+  /* background-color: yellow; */
 
   justify-content: center;
   align-items: center;
@@ -379,20 +379,28 @@ nav img {
 .insidecontainer{
   flex-shrink: 0;
   height: 15vw;
-  width: 35vw;
+  width: 40vw;
   background-color: orangered;
   border-radius: 20px;
  
   border: 2px solid black;
   box-shadow: 10px 20px 0px black;
   padding: 2vw;
+  font-weight: 100;
   
   
+}
+.colordiv{
+  background-color: #9ae975;
+  padding: 0.5vw 1vw;
+  border-radius: 10px;
 }
 .insidediv{
   width: 100%;
   display: flex;
   justify-content: space-between;
+  
+  
 }
 
 
