@@ -9,6 +9,7 @@
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Sixtyfour&display=swap"
@@ -16,15 +17,15 @@
     />
   </head>
   <body>
-    <div id="intro">
+    <!-- <div id="intro">
       <h1>To be or not to be is upto me</h1>
-    </div>
+    </div> -->
     <div id="main">
       <div class="page1" data-scroll>
         <nav>
           <img src="logo.png" alt="logo" />
           <div class="nav-2">
-            <h4><a href="#">About</a></h4>
+            <h4><a href="#target-2">About</a></h4>
             <h4><a href="#">Projects</a></h4>
             <h4><a href="#">Contact me</a></h4>
           </div>
@@ -32,7 +33,7 @@
 
         <div class="center">
           <div class="left">
-            <img src="  photo.png" alt="profile-photo" />
+            <img class='new-img' src="photo.png" alt="profile-photo" />
           </div>
           <div class="right">
             <div id="shadow-name">
@@ -49,7 +50,7 @@
         <div class="bouncy-bob-1"></div>
       </div>
 
-      <div class="page2" data-scroll>
+      <div class="page2" id="target-2" data-scroll>
         <!-- <div class="bouncy-bob-mid"></div> -->
         
 
@@ -57,14 +58,14 @@
 
 
           <div class="insidecontainer">
-           <div class="colordiv"><div class="insidediv"><h2> Rochester Institute of Technology </h2> <h2>3.75/4 </h2></div>
+           <div class="colordiv"><div class="insidediv"><h2> Rochester Institute of Technology </h2> <h2> <span>3.75/4 </span> </h2></div>
            <h2>Master's in Computer Science </h2> </div>
            <br>
            <h3> Courses: Algorithms, Object-Oriented Programming, Big Data, Machine Learning, AI & Deep Learning, Computer Vision, Web Services and Web Dev </h3>
 
           </div>
           <div class="insidecontainer">
-           <div class="colordiv"> <div class="insidediv"><h2> SIES Graduate School of Technology </h2> <h2> 7.78/10 </h2></div>
+           <div class="colordiv"> <div class="insidediv"><h2> SIES Graduate School of Technology </h2> <h2> <span>7.78/10 </span> </h2></div>
             <h2>Bachelor of Technology in Electronics and Communications Engineering </h2></div>
             <br>
             <h3>Courses: Operating Systems, Artificial Intelligence, Machine Learning, Computer Architecture, Data Structures</h3>
@@ -72,12 +73,12 @@
 
             
           </div>
-          <div class="insidecontainer">
+          <!-- <div class="insidecontainer">
             
           </div>
           <div class="insidecontainer">
             
-          </div>
+          </div> -->
           </div>
          
          <!--  <div class="aboutme">
@@ -109,7 +110,7 @@
 
     
 
-      <div class="page3" data-scroll>
+      <!-- <div class="page3" data-scroll>
         <div class="about-me">
           <h2>Projects</h2>
         </div>
@@ -207,19 +208,28 @@
           </div>
         </div>
      
-      </div>
+      </div> -->
 
 
       
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
-      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
+   <!--  Gsap is needed for Basic Effects -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+   <!-- Scroll Trigger is needed for Scroll Effects -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+   <!-- Three.js is needed for 3d Effects -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+
+   <!-- ControlKit is needed for Debug Panel -->
+   <script src="https://cdn.jsdelivr.net/gh/automat/controlkit.js@master/bin/controlKit.min.js"></script>
+   <script
+     type="text/javascript"
+     src="https://unpkg.com/sheryjs/dist/Shery.js"
+   ></script>
     <script src="script.js"></script>
   </body>
 </html>

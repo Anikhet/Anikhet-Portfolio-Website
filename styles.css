@@ -330,6 +330,7 @@ nav img {
 
 .bouncy-bob-mid {
   position: absolute;
+  
   height: 30vw;
   width: 30vw;
   background-color: orangered;
@@ -386,21 +387,28 @@ nav img {
   border: 2px solid black;
   box-shadow: 10px 20px 0px black;
   padding: 2vw;
-  font-weight: 100;
+  
   
   
 }
 .colordiv{
   background-color: #9ae975;
-  padding: 0.5vw 1vw;
+  padding: 0.5vw 1.5vw;
   border-radius: 10px;
 }
+
+
 .insidediv{
   width: 100%;
   display: flex;
   justify-content: space-between;
   
   
+  
+}
+.insidediv span{
+  /* font-style: italic; */
+  font-weight: 200;
 }
 
 
@@ -430,3 +438,7 @@ nav img {
   z-index: 10;
   font-weight: 100;
 }
+
+
+
+
