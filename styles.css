@@ -186,13 +186,13 @@ nav img {
 }
 
 .nav-2 h4 {
-  padding: 10px 20px;
+  padding: 0.5vw 1vw;
   border: 1px solid rgba(0, 0, 0, 0.851);
   border-radius: 50px;
   font-weight: 600;
   color: rgba(0, 0, 0, 0.765);
   position: relative;
-  font-size: 18px;
+  font-size: 1vw;
   overflow: hidden;
 }
 .nav-2 h4::after {
