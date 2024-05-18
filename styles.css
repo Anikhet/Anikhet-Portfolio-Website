@@ -397,7 +397,7 @@ nav img {
 }
 .insidecontainer{
   flex-shrink: 0;
-  height: 20vw;
+  height: 40vh;
   width: 40vw;
   background-color: orangered;
   border-radius: 20px;
@@ -412,7 +412,7 @@ nav img {
 }
 .insidecontainer-3{
   flex-shrink: 0;
-  height: 25vw;
+  height: 50vh;
   width: 40vw;
   background-color: rgba(255, 68, 0, 0.2);
   border-radius: 20px;
